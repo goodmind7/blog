@@ -6,7 +6,7 @@ export const USER_INFORMATIONS = {
   "github": "",
   "domain": "https://goodmind.kr",
   "meta": {
-    "title": "굿마인드 블로그입니다.",
+    "title": "굿마인드",
     "description": "굿마인드 블로그입니다."
   }
 };
