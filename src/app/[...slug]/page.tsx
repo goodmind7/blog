@@ -13,8 +13,10 @@ interface PostProps {
 }
 
 const getPostFromParams = async (params: PostProps["params"]) => {
+  
   const slug = params?.slug?.join("/");
-  const post = allPosts.find((post) => post.slugAsParams === slug);
+  const post = allPosts.find((post) => post.slug === slug);
+ // 조건식 post.slugAsParams === slug >>> post.slug === slug 변경
 
   if (!post) {
     null;

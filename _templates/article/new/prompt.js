@@ -22,7 +22,7 @@ const notEmpty = (input) => input.trim() !== "";
 
 module.exports = {
   prompt: async ({ prompter, args }) => {
-    const categoriesPath = path.join(process.cwd(), "src/content/posts");
+    const categoriesPath = path.join(process.cwd(), "src/content");
     const categories = fs.readdirSync(categoriesPath).filter((file) => {
       return fs.statSync(path.join(categoriesPath, file)).isDirectory();
     });
@@ -78,7 +78,7 @@ module.exports = {
         {
           type: "input",
           name: "slug",
-          message: "글의 URL에 사용될 slug를 입력해 주세요. ex) blog.com/posts/[slug]",
+          message: "글의 URL에 사용될 slug를 입력해 주세요. ex) blog.com/[slug]",
         },
         notEmpty,
       );
@@ -120,7 +120,7 @@ module.exports = {
         date = new Date().toISOString().split("T")[0];
       }
 
-      console.log(`🥳생성 완료!🥳 src/content/posts/${category}/${slug}.mdx 에서 글을 작성하세요!`);
+      console.log(`🥳생성 완료!🥳 src/content/${category}/${slug}.mdx 에서 글을 작성하세요!`);
 
       return {
         category,

@@ -1,7 +1,7 @@
 import fs from "fs";
 import path from "path";
 
-const directoryPath = path.join(process.cwd(), "src/content/posts");
+const directoryPath = path.join(process.cwd(), "src/content");
 const filenames = new Set();
 
 const checkForDuplicates = (dirPath) => {
