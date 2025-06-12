@@ -24,6 +24,7 @@ const PostListSection = ({ category }: { category?: string }) => {
                 <Card
                   title={post.title}
                   description={post.description}
+                  quote={post.quote}
                   thumbnail={post.thumbnail}
                   category={post.category}
                   date={post.date}

@@ -53,6 +53,9 @@ export const Post = defineDocumentType(() => ({
     description: {
       type: "string",
     },
+    quote: {
+      type: "string",
+    },
     keywords: { type: "list", of: { type: "string" } },
     thumbnail: { type: "string" },
     date: {

@@ -15,7 +15,7 @@ export interface CardProps extends Omit<HTMLAttributes<HTMLDivElement>, "title">
   date: string;
 }
 
-const Card = ({ className, title, description, thumbnail, category, date }: CardProps) => {
+const Card = ({ className, title, description, quote, thumbnail, category, date }: CardProps) => {
 
   return (
     <div
@@ -62,6 +62,13 @@ const Card = ({ className, title, description, thumbnail, category, date }: Card
             >
               {description}
             </p>
+            <p
+              className={cn(
+                "text-textColor text-xs break-words text-ellipsis overflow-hidden",
+              )}
+            >
+              {quote}
+            </p>            
           </div>
         </div>
         <span className={cn("text-xs font-light text-textColor")}>{convertDate(date)}</span>
