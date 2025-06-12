@@ -12,12 +12,13 @@ const PostListSection = ({ category }: { category?: string }) => {
     <section className="flex w-full max-w-[1024px] relative justify-center mx-auto gap-4 p-4 py-16">
 
       <div className="w-full flex flex-col gap-8">
-        <h2 className=" font-black text-textColor text-6xl">
-          {category ?? "GOODMIND"}
+        <h2 className=" font-black text-textColor text-5xl">
+          {category ?? "All"}
           <span className="text-primary text-center items-center justify-center text-[5rem] leading-[0]">
             .
           </span>
-        </h2>
+        </h2> 
+        <span>{allPosts.length + " posts."}</span>
         <div className="flex flex-col gap-8 w-full h-fit">
           {sortDatesDescending(allPosts)
             .filter((post) => post.category === category || !category)

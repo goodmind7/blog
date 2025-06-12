@@ -90,6 +90,8 @@ module.exports = {
           "(optional) 어떤 글인지 간단한 설명을 입력해 주세요. 글 목록에서 제목과 함께 노출되는 설명이에요.",
       });
 
+      const quote = "";
+
       const keywords = await promptInput(prompter, {
         type: "input",
         name: "keywords",
@@ -131,6 +133,7 @@ module.exports = {
         date,
         slug,
         args,
+        quote,
       };
     } catch (error) {
       console.error(error.message);
