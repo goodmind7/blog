@@ -10,6 +10,7 @@ import convertDate from "@/utils/convertDate";
 export interface CardProps extends Omit<HTMLAttributes<HTMLDivElement>, "title"> {
   title: string;
   description?: string;
+  quote: string;
   thumbnail?: string;
   category: string;
   date: string;
