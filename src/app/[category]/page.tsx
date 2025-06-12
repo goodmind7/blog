@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 
 const Category = ({ params }: { params: { category: string } }) => {
   const categories = getCategories();
-
+console.log(params)
   if (!categories.includes(params.category)) {
     notFound();
   }

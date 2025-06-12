@@ -1,3 +1,3 @@
 ---
-to: public/images/posts/<%= category %>/<%= slug %>/.gitkeep
+to: public/images/<%= category %>/<%= slug %>/.gitkeep
 ---

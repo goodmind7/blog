@@ -16,6 +16,7 @@ export interface CardProps extends Omit<HTMLAttributes<HTMLDivElement>, "title">
 }
 
 const Card = ({ className, title, description, thumbnail, category, date }: CardProps) => {
+  console.log(title, thumbnail)
   return (
     <div
       className={cn(

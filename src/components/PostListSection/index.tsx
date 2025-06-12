@@ -4,6 +4,7 @@ import Sidebar from "../Sidebar";
 import sortDatesDescending from "@/utils/sortDatesDescending";
 import { allPosts } from "contentlayer/generated";
 import Link from "next/link";
+import Category from "../Category";
 
 const PostListSection = ({ category }: { category?: string }) => {
   return (

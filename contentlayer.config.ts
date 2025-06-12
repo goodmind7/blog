@@ -9,7 +9,7 @@ const computedFields: ComputedFields = {
   category: {
     type: "string",
     resolve: (doc) => {
-      return doc._raw.flattenedPath.split("/")[1];
+      return doc._raw.flattenedPath.split("/")[0]; //카테고리 src/content/[폴더배열]
     },
   },
   slug: {
@@ -21,13 +21,24 @@ const computedFields: ComputedFields = {
       return `${pathArr[0]}/${pathArr[lastIndex]}`;
     },
   },
-  slugAsParams: {
+  // 수정 2025.06-12
+  // slugAsParams: {
+  // type: "string",
+  // resolve: (doc) => {
+  //   const pathArr = doc._raw.flattenedPath.split("/");
+  //   const lastIndex = pathArr.length - 1;
+  //   console.log(pathArr, lastIndex, pathArr[lastIndex])
+
+  //   return pathArr;
+  // },
+    slugAsParams: {
     type: "string",
     resolve: (doc) => {
-      const pathArr = doc._raw.flattenedPath.split("/");
+      const pathArr = doc._raw.flattenedPath//.split("/");
       const lastIndex = pathArr.length - 1;
+      console.log(pathArr, lastIndex, pathArr[lastIndex])
 
-      return pathArr[lastIndex];
+      return pathArr//[lastIndex];
     },
   },
 };
