@@ -35,7 +35,7 @@ export const generateMetadata = async ({ params }: PostProps): Promise<Metadata>
   return {
     title: post.title,
     description: post.description,
-    quote: post.quote,
+    //quote: post.quote,
     openGraph: {
       title: { absolute: post.title },
       description: post.description,
