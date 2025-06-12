@@ -27,6 +27,7 @@ const MainLogo = ({
         {children ?? (
           <>
             {USER_INFORMATIONS.headerTitle}
+            {' '}
             {USER_INFORMATIONS.mascot}
           </>
         )}

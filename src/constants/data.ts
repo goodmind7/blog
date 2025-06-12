@@ -1,7 +1,7 @@
 export const USER_INFORMATIONS = {
   "headerTitle": "굿마인드",
   "userName": "goodmind",
-  "mascot": "🥰",
+  "mascot": "⛨",
   "resume": "",
   "github": "",
   "domain": "https://goodmind.kr",
@@ -13,6 +13,6 @@ export const USER_INFORMATIONS = {
 
 export const CATEGORY_ICONS: Record<string, string> = {
   travel: "🔧",
-  mind: "🔧",
+  mind: "💙",
   All: "🏠",
 };
