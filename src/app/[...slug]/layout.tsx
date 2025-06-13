@@ -4,6 +4,7 @@
 import PostPageHeader from "@/components/Header/PostPageHeader";
 import ScrollProgress from "@/components/ScrollProgress";
 import ScrollTop from "@/components/ScrollTop";
+//import Pagination from "@/components/Pagination";
 
 const PostLayout = ({
   children,
@@ -18,6 +19,11 @@ const PostLayout = ({
         <ScrollProgress />
 
         {children}
+
+        <div className="py-24">
+          {/* <Pagination /> */}
+        </div>
+
         <div className="py-24">
           {/* <Comments /> */}
         </div>

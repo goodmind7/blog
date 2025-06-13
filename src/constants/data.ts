@@ -7,7 +7,7 @@ export const USER_INFORMATIONS = {
   "domain": "https://goodmind.kr",
   "meta": {
     "title": "굿마인드",
-    "description": "굿마인드는 마인드의 변화와 성장을 지향하는 마인드셋 블로그입니다."
+    "description": "마인드의 변화와 성장을 지향하는 마인드셋 블로그입니다."
   }
 };
 

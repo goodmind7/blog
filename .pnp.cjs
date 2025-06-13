@@ -27,6 +27,7 @@ const RAW_RUNTIME_STATE =
         "packageLocation": "./",\
         "packageDependencies": [\
           ["@giscus/react", "virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:3.0.0"],\
+          ["@heroicons/react", "virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:2.2.0"],\
           ["@sjoleee/react-cmdk", "virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:1.4.2"],\
           ["@tailwindcss/typography", "virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:0.5.10"],\
           ["@types/node", "npm:20.11.24"],\
@@ -766,6 +767,26 @@ const RAW_RUNTIME_STATE =
           ["@heroicons/react", "npm:2.1.1"]\
         ],\
         "linkType": "SOFT"\
+      }],\
+      ["npm:2.2.0", {\
+        "packageLocation": "./.yarn/cache/@heroicons-react-npm-2.2.0-775299dcc0-5bf8a3faa1.zip/node_modules/@heroicons/react/",\
+        "packageDependencies": [\
+          ["@heroicons/react", "npm:2.2.0"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:2.2.0", {\
+        "packageLocation": "./.yarn/__virtual__/@heroicons-react-virtual-d0a0c69696/0/cache/@heroicons-react-npm-2.2.0-775299dcc0-5bf8a3faa1.zip/node_modules/@heroicons/react/",\
+        "packageDependencies": [\
+          ["@heroicons/react", "virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:2.2.0"],\
+          ["@types/react", "npm:18.2.61"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
       }],\
       ["virtual:f8722f9ce30117cc1a10c9bd88afa758daa32ef96dbeb0a46cb024014b70e73147265f3b05cf8b208a3806126b7f88be074ce23ad0b3ec1fe730a2553fa2f6ef#npm:2.1.1", {\
         "packageLocation": "./.yarn/__virtual__/@heroicons-react-virtual-5f81a1cd60/0/cache/@heroicons-react-npm-2.1.1-8eadbb2400-037b1cc1c0.zip/node_modules/@heroicons/react/",\
@@ -9930,6 +9951,7 @@ const RAW_RUNTIME_STATE =
         "packageDependencies": [\
           ["very-simple-blog", "workspace:."],\
           ["@giscus/react", "virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:3.0.0"],\
+          ["@heroicons/react", "virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:2.2.0"],\
           ["@sjoleee/react-cmdk", "virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:1.4.2"],\
           ["@tailwindcss/typography", "virtual:52439f2cc4c486fa9d1e15054819ae4806947a3b9a1d9487877046dd11ab0fdb6af036acdaa5b825f88cdae646938defdb6e28e8f7a703c6795e23345c3705d2#npm:0.5.10"],\
           ["@types/node", "npm:20.11.24"],\

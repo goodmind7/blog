@@ -14,6 +14,7 @@
   },
   "dependencies": {
     "@giscus/react": "^3.0.0",
+    "@heroicons/react": "^2.2.0",
     "@sjoleee/react-cmdk": "^1.4.2",
     "contentlayer": "^0.3.4",
     "framer-motion": "^11.0.8",
