@@ -81,7 +81,7 @@ const Card = ({ className, title, subtitle, description, quote, thumbnail, categ
           
           </div>
         </div>
-        <span className={cn("text-xs font-light text-textColor")}>{convertDate(date)}</span>
+        <span className={cn("text-xs font-light text-textColor")}>{convertDate(date).slice(5)}</span>
       </div>
     </div>
   );
