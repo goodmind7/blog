@@ -3,7 +3,8 @@ import Link from "next/link";
 const NotFound = () => {
   return (
     <div className="flex flex-col tablet:gap-8 gap-4 mx-auto max-w-[1024px] py-16 items-center justify-center min-h-[100dvh]">
-      <h2 className="font-bold tablet:text-2xl text-xl">존재하지 않는 페이지예요🥲</h2>
+      <h2 className="font-bold tablet:text-2xl text-xl">블로그 리뉴얼중입니다.</h2> 
+      {/* 존재하지 않는 페이지예요🥲 */}
       <Link href="/" className="contents">
         <button
           type="button"
