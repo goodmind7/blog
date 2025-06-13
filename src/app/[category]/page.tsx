@@ -1,7 +1,8 @@
+import { notFound } from "next/navigation";
+
 import MainPageHeader from "@/components/Header/MainPageHeader";
 import PostListSection from "@/components/PostListSection";
 import getCategories from "@/utils/getCategories";
-import { notFound } from "next/navigation";
 
 const Category = ({ params }: { params: { category: string } }) => {
   const categories = getCategories();

@@ -1,5 +1,6 @@
-import { USER_INFORMATIONS } from "@/constants/data";
 import { MetadataRoute } from "next";
+
+import { USER_INFORMATIONS } from "@/constants/data";
 
 const robots = (): MetadataRoute.Robots => {
   return {

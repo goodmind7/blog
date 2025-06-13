@@ -1,16 +1,17 @@
 "use client";
 
+import { useEffect, useState } from "react";
+import { m, useAnimationControls } from "framer-motion";
+import { Github, Page } from "iconoir-react";
+
 import Category from "../Category";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import MainLogo from "../MainLogo";
 import MenuButton from "./MenuButton";
-
-import { useEffect, useState } from "react";
 import { headerVariants } from "@/constants/motions";
-import { m, useAnimationControls } from "framer-motion";
 import cn from "@/utils/cn";
 import { USER_INFORMATIONS } from "@/constants/data";
-import { Github, Page } from "iconoir-react";
+
 
 interface MainPageHeaderProps {
   className?: string;

@@ -1,9 +1,10 @@
-import FramerLazyMotion from "@/components/FramerLazyMotion";
-import ThemeProvider from "@/components/ThemeProvider";
 import { Metadata } from "next";
 import localFont from "next/font/local";
-import "./globals.css";
+
+import FramerLazyMotion from "@/components/FramerLazyMotion";
+import ThemeProvider from "@/components/ThemeProvider";
 import { USER_INFORMATIONS } from "@/constants/data";
+import "./globals.css";
 
 export const metadata: Metadata = {
   metadataBase: new URL(USER_INFORMATIONS.domain),

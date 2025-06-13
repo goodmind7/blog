@@ -1,6 +1,7 @@
-import { ButtonHTMLAttributes, MouseEvent } from "react";
-import { USER_INFORMATIONS } from "@/constants/data";
 import { useRouter } from "next/navigation";
+import { ButtonHTMLAttributes, MouseEvent } from "react";
+
+import { USER_INFORMATIONS } from "@/constants/data";
 import cn from "@/utils/cn";
 
 const MainLogo = ({

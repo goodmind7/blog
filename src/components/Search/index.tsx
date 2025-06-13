@@ -2,13 +2,14 @@
 
 import "@sjoleee/react-cmdk/dist/cmdk.css";
 import { useState } from "react";
-import { allPosts } from "contentlayer/generated";
+
 import CommandPalette, {
   filterItems,
   getItemIndex,
   useHandleOpenCommandPalette,
 } from "@sjoleee/react-cmdk";
 import { MotionProps, m } from "framer-motion";
+import { allPosts } from "contentlayer/generated";
 
 const Search = (props: MotionProps) => {
   const [open, setOpen] = useState(false);

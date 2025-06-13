@@ -1,9 +1,9 @@
+import Link from "next/link";
+
 import Card from "../Card";
 import Sidebar from "../Sidebar";
-
 import sortDatesDescending from "@/utils/sortDatesDescending";
 import { allPosts } from "contentlayer/generated";
-import Link from "next/link";
 
 //import Category from "../Category";
 

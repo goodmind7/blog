@@ -1,9 +1,11 @@
 "use client";
 
+import Image, { ImageProps } from "next/image";
 import { useEffect, useState } from "react";
+
 import { USER_INFORMATIONS } from "@/constants/data";
 import cn from "@/utils/cn";
-import Image, { ImageProps } from "next/image";
+
 
 interface ImageWithFallback extends Omit<ImageProps, "src"> {
   src?: string;

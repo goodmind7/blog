@@ -1,9 +1,10 @@
 "use client";
 
+import { useParams, useRouter } from "next/navigation";
+
 import { CATEGORY_ICONS } from "@/constants/data";
 import cn from "@/utils/cn";
 import getCategories from "@/utils/getCategories";
-import { useParams, useRouter } from "next/navigation";
 
 interface CategoryProps {
   onCategoryItemClick?: () => void | Promise<void>;

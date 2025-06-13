@@ -1,8 +1,10 @@
+import { MetadataRoute } from "next";
+
 import { USER_INFORMATIONS } from "@/constants/data";
 import getCategories from "@/utils/getCategories";
 import sortDatesDescending from "@/utils/sortDatesDescending";
 import { allPosts } from "contentlayer/generated";
-import { MetadataRoute } from "next";
+
 
 const sitemap = (): MetadataRoute.Sitemap => {
   const posts: MetadataRoute.Sitemap = allPosts.map((post) => ({

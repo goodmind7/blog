@@ -1,10 +1,11 @@
+import { Metadata } from "next";
+import { notFound } from "next/navigation";
+
 import Badge from "@/components/Badge";
 import Mdx from "@/components/Mdx";
 import { USER_INFORMATIONS } from "@/constants/data";
 import convertDate from "@/utils/convertDate";
 import { allPosts } from "contentlayer/generated";
-import { Metadata } from "next";
-import { notFound } from "next/navigation";
 
 
 interface PostProps {

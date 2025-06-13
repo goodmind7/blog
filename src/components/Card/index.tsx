@@ -1,9 +1,9 @@
 "use client";
 
+import { HTMLAttributes } from "react";
 import Badge from "../Badge";
 import ImageWithFallback from "../ImageWithFallback";
 
-import { HTMLAttributes } from "react";
 import cn from "@/utils/cn";
 import convertDate from "@/utils/convertDate";
 

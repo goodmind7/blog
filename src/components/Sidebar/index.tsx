@@ -1,12 +1,13 @@
 "use client";
 
+import { Github, Page } from "iconoir-react";
+
 import Category from "../Category";
 import MainLogo from "../MainLogo";
 import Search from "../Search";
 import CustomCursorThemeToggle from "../ThemeToggle/CustomCursorThemeToggle";
 
 import { USER_INFORMATIONS } from "@/constants/data";
-import { Github, Page } from "iconoir-react";
 
 const Sidebar = () => {
   return (
