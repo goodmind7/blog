@@ -50,6 +50,9 @@ export const Post = defineDocumentType(() => ({
       type: "string",
       required: true,
     },
+    subtitle: {
+      type: "string",
+    },    
     description: {
       type: "string",
     },

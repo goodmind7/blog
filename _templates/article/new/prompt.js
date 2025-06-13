@@ -73,6 +73,8 @@ module.exports = {
         notEmpty,
       );
 
+      const subtitle = "";
+
       const slug = await promptInput(
         prompter,
         {
@@ -128,12 +130,13 @@ module.exports = {
         category,
         categoryIcon,
         title,
+        subtitle,
+        quote,
         description,
         keywords,
         date,
         slug,
         args,
-        quote,
       };
     } catch (error) {
       console.error(error.message);

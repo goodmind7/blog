@@ -3,8 +3,9 @@ to: src/content/<%= category %>/<%= slug %>.mdx
 ---
 ---
 title: <%= title %>
-description: <%= description %>
+subtitle: <%= subtitle %>
 quote: <%= quote %>
+description: <%= description %>
 date: <%= date %>
 keywords: [<%= keywords %>]
 thumbnail: /images/<%= category %>/<%= slug %>/1.jpg

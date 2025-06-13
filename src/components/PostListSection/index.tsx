@@ -26,8 +26,9 @@ const PostListSection = ({ category }: { category?: string }) => {
               <Link key={post._id} href={post.slug}>
                 <Card
                   title={post.title}
-                  description={post.description}
+                  subtitle={post.subtitle}
                   quote={post.quote}
+                  description={post.description}
                   thumbnail={post.thumbnail}
                   category={post.category}
                   date={post.date}

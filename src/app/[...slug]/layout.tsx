@@ -19,7 +19,7 @@ const PostLayout = ({
 
         {children}
         <div className="py-24">
-          <Comments />
+          {/* <Comments /> */}
         </div>
       </div>
     </main>

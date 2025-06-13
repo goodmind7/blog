@@ -6,6 +6,7 @@ import { allPosts } from "contentlayer/generated";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
+
 interface PostProps {
   params: {
     slug: string[];
@@ -77,6 +78,7 @@ const PostPage = async ({ params }: PostProps) => {
       </div>
       <hr className="my-8" />
       <Mdx code={post.body.code} />
+
     </section>
   );
 };
