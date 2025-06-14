@@ -53,7 +53,7 @@ const Category = ({ onCategoryItemClick }: CategoryProps) => {
             )}
           >
             {!!CATEGORY_ICONS[category] && <span>{CATEGORY_ICONS[category]}</span>}
-            <span className="font-medium">{category}</span>
+            <span className="font-medium">{category.charAt(0).toUpperCase() + category.slice(1)}</span>
           </button>
         </li>
       ))}
