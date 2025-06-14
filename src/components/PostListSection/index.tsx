@@ -13,7 +13,7 @@ const PostListSection = ({ category }: { category?: string }) => {
 
       <div className="w-full flex flex-col gap-8">
         <h2 className=" font-black text-textColor text-5xl">
-          {category?.charAt(0).toUpperCase() + category?.slice(1) ?? "All"}
+          {category ? category.charAt(0).toUpperCase() + category?.slice(1) : "All"}
           <span className="text-primary text-center items-center justify-center text-[5rem] leading-[0]">
             .
           </span>
