@@ -86,3 +86,9 @@ giscus-widget {
   color: var(--shiki-dark);
   background-color: var(--shiki-dark-bg);
 }
+
+/* 사용자 정의 태그 */
+author {
+  font-size: small;
+  color: var(--color-complementary-text-color);
+}
