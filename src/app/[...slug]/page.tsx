@@ -70,6 +70,7 @@ const PostPage = async ({ params }: PostProps) => {
             <h1 className="text-[2.3rem] tablet:text-[3rem] font-extrabold leading-tight break-keep">
               {post.title}
             </h1>
+            <span className="text-lg">{post.subtitle}</span>
             <div className="flex flex-col items-center gap-2">
               <Badge>{post.category}</Badge>
               <span className="text-sm opacity-50">{convertDate(post.date)}</span>
