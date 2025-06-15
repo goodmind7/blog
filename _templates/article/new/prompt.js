@@ -85,21 +85,21 @@ module.exports = {
         notEmpty,
       );
 
-      const description = await promptInput(prompter, {
-        type: "input",
-        name: "description",
-        message:
-          "(optional) 어떤 글인지 간단한 설명을 입력해 주세요. 글 목록에서 제목과 함께 노출되는 설명이에요.",
-      });
-
+      // const description = await promptInput(prompter, {
+      //   type: "input",
+      //   name: "description",
+      //   message:
+      //     "(optional) 어떤 글인지 간단한 설명을 입력해 주세요. 글 목록에서 제목과 함께 노출되는 설명이에요.",
+      // });
+      const description = "";
       const quote = "";
-
-      const keywords = await promptInput(prompter, {
-        type: "input",
-        name: "keywords",
-        message:
-          "(optional) 글의 키워드를 원하는 만큼 입력해 주세요. 키워드는 ', '로 구분해 주세요.",
-      });
+      const keywords = [];
+      // const keywords = await promptInput(prompter, {
+      //   type: "input",
+      //   name: "keywords",
+      //   message:
+      //     "(optional) 글의 키워드를 원하는 만큼 입력해 주세요. 키워드는 ', '로 구분해 주세요.",
+      // });
 
       let { date } = await prompter.prompt({
         type: "select",
