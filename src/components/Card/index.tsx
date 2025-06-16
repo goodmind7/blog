@@ -71,13 +71,13 @@ const Card = ({ className, title, subtitle, description, quote, thumbnail, categ
             >
               {quote}
             </p>              
-            {/* <p
+            <p
               className={cn(
                 "text-textColor text-sm whitespace-nowrap break-words text-ellipsis overflow-hidden",
               )}
             >
               {description}
-            </p> */}
+            </p>
           
           </div>
         </div>
