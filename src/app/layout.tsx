@@ -5,6 +5,7 @@ import FramerLazyMotion from "@/components/FramerLazyMotion";
 import ThemeProvider from "@/components/ThemeProvider";
 import { USER_INFORMATIONS } from "@/constants/data";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next"
 
 export const metadata: Metadata = {
   metadataBase: new URL(USER_INFORMATIONS.domain),
@@ -35,7 +36,10 @@ const RootLayout = ({
     <html lang="ko" className={`${pretendard.variable} bg-backgroundHeavy`} data-theme="light">
       <FramerLazyMotion>
         <ThemeProvider>
-          <body className="relative antialiased">{children}</body>
+          <body className="relative antialiased">
+            {children} 
+            <Analytics />
+          </body>
         </ThemeProvider>
       </FramerLazyMotion>
     </html>
