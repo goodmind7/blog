@@ -11,6 +11,7 @@ import MenuButton from "./MenuButton";
 import { headerVariants } from "@/constants/motions";
 import cn from "@/utils/cn";
 import { USER_INFORMATIONS } from "@/constants/data";
+import Search from "../Search";
 
 
 interface MainPageHeaderProps {
@@ -52,6 +53,7 @@ const MainPageHeader = ({ className }: MainPageHeaderProps) => {
       <div className="flex items-center justify-between w-full h-10 shrink-0">
         <MainLogo onClick={closeMenu} />
         <div className="flex justify-center items-center h-full desktop:hidden">
+            <Search />
           <ThemeToggle className="px-2" />
           <MenuButton open={isMenuOpen} onClick={handleMenuButtonClick} className="px-2" />
         </div>
