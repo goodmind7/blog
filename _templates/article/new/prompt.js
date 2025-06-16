@@ -75,7 +75,7 @@ module.exports = {
 
       const subtitle = "";
 
-      const slug = await promptInput(
+      let slug = await promptInput(
         prompter,
         {
           type: "input",
@@ -85,6 +85,9 @@ module.exports = {
         notEmpty,
       );
 
+      slug = slug.trim().toLowerCase().replace(/[^a-z0-9-]/g, "-");
+      console.log(slug);
+      
       // const description = await promptInput(prompter, {
       //   type: "input",
       //   name: "description",

@@ -56,9 +56,9 @@ const Sidebar = () => {
         </div>
 
         <div className="flex flex-col items-center text-[10px] text-textColor/30">
-          <span className="whitespace-pre-wrap text-center">{`Copyright 2024. ${USER_INFORMATIONS.userName} All rights reserved.`}</span>
-          <a target="_blank" rel="noreferrer" href="https://github.com/sjoleee/very-simple-blog">
-            Powered by very-simple-blog
+          <span className="whitespace-pre-wrap text-center">{`Copyright 2020. ${USER_INFORMATIONS.userName} All rights reserved.`}</span>
+          <a rel="noreferrer" href="mailto:iyfhan@gmail.com" className="text-textColor/50 hover:text-primary transition-colors">
+            E-mail iyfhan@gmail.com
           </a>
         </div>
       </div>
