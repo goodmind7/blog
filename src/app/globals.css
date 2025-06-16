@@ -92,3 +92,15 @@ author {
   font-size: small;
   color: var(--color-complementary-text-color);
 }
+
+block {
+  background-color: #050505;
+  color: white;
+  border-radius: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  font-weight: 600;
+  font-size: 0.875em;
+}

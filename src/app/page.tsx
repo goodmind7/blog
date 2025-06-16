@@ -5,7 +5,6 @@ const Home = () => {
   return (
     <main className="w-full mx-auto min-h-[100dvh] h-full flex flex-col">
       <MainPageHeader className="desktop:hidden" />
-      {/* Homepage */}
       <PostListSection />
     </main>
   );
