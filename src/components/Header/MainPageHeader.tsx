@@ -16,6 +16,7 @@ import Search from "../Search";
 
 interface MainPageHeaderProps {
   className?: string;
+  label?: string
 }
 
 const MainPageHeader = ({ className }: MainPageHeaderProps) => {
