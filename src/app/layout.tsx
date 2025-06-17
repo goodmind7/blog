@@ -18,6 +18,9 @@ export const metadata: Metadata = {
     url: USER_INFORMATIONS.domain,
     images: `${USER_INFORMATIONS.domain}/images/share.png`,
   },
+    verification: {
+    google: 'spJzeuLdgs4PtQ2oGpVcUIcYso8OO72L7WQV-AxHgPQ', 
+  },
 };
 
 const pretendard = localFont({
