@@ -12,12 +12,12 @@ import CommandPalette, {
 } from "@sjoleee/react-cmdk";
 import { MotionProps, m } from "framer-motion";
 
-interface MotionProps {
+interface MotionProps2 extends MotionProps {
   className?: string;
   label?: string;
 }
 
-const Search = (props: MotionProps) => {
+const Search = (props: MotionProps2) => {
   const [open, setOpen] = useState(false);
   const [search, setSearch] = useState("");
   useHandleOpenCommandPalette(setOpen);
