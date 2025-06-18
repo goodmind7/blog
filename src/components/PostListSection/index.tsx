@@ -6,7 +6,13 @@ import Sidebar from "../Sidebar";
 import sortDatesDescending from "@/utils/sortDatesDescending";
 import { allPosts } from "contentlayer/generated";
 
-//import Category from "../Category";
+// Calculate the count of posts in each category
+const categoryCounts = allPosts.reduce((acc, post) => {
+  const categories = post.category;
+  acc[categories] = (acc[categories] || 0) + 1;
+  return acc;
+}, {} as Record<string, number>);
+
 
 const PostListSection = ({ category }: { category?: string }) => {
   return (
@@ -18,8 +24,8 @@ const PostListSection = ({ category }: { category?: string }) => {
           <span className="text-primary text-center items-center justify-center text-[5rem] leading-[0]">
             .
           </span>
-        </h2> 
-        <span>{"Total " + allPosts.length + " stories."}</span>
+        </h2>
+        <span>{category ? categoryCounts[category] + " posts." : allPosts.length + " posts."}</span>
         <div className="flex flex-col gap-8 w-full h-fit">
           {sortDatesDescending(allPosts)
             .filter((post) => post.category === category || !category)
