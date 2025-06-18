@@ -1,6 +1,7 @@
 "use client";
 
 import { HTMLAttributes } from "react";
+
 import Badge from "../Badge";
 import ImageWithFallback from "../ImageWithFallback";
 

@@ -8,10 +8,12 @@ import Category from "../Category";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import MainLogo from "../MainLogo";
 import MenuButton from "./MenuButton";
+import Search from "../Search";
+
 import { headerVariants } from "@/constants/motions";
 import cn from "@/utils/cn";
+
 import { USER_INFORMATIONS } from "@/constants/data";
-import Search from "../Search";
 
 interface MainPageHeaderProps {
   className?: string;
@@ -52,7 +54,7 @@ const MainPageHeader = ({ className }: MainPageHeaderProps) => {
       <div className="flex items-center justify-between w-full h-10 shrink-0">
         <MainLogo onClick={closeMenu} />
         <div className="flex justify-center items-center h-full desktop:hidden">
-          <Search className="p-0 text-xl" label="🔍" />
+          <Search className="p-0 text-2xl" label="🔍" />
           <ThemeToggle className="px-2" />
           <MenuButton open={isMenuOpen} onClick={handleMenuButtonClick} className="px-2" />
         </div>
