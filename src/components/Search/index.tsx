@@ -10,10 +10,10 @@ import CommandPalette, {
 } from "@sjoleee/react-cmdk";
 import { MotionProps, m } from "framer-motion";
 import { allPosts } from "contentlayer/generated";
+//import { isMobile } from 'react-device-detect';
 
 interface MotionProps {
   className?: string;
-  label?: string;
 }
 
 const Search = (props: MotionProps) => {
@@ -61,9 +61,9 @@ const Search = (props: MotionProps) => {
       <m.button
         {...props}
         onClick={handleSearchButtonClcik}
-        //className="text-left w-full bg-backgroundLight pl-4 pr-6 py-2 rounded-md text-textColor/50 hover:text-textColor/80 hover:border-textColor/80 border-[0.5px] border-textColor/20 text-sm transition-all mr-4"
+        className="text-left w-full bg-backgroundLight pl-4 pr-6 py-2 rounded-md text-textColor/50 hover:text-textColor/80 hover:border-textColor/80 border-[0.5px] border-textColor/20 text-sm transition-all mr-4"
       >
-        {props.label}
+        Search
       </m.button>
       <CommandPalette
         onChangeSearch={setSearch}
