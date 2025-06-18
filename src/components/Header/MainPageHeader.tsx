@@ -52,7 +52,7 @@ const MainPageHeader = ({ className }: MainPageHeaderProps) => {
       <div className="flex items-center justify-between w-full h-10 shrink-0">
         <MainLogo onClick={closeMenu} />
         <div className="flex justify-center items-center h-full desktop:hidden">
-          <Search className="p-0" label="🔍" />
+          <Search className="p-0 text-xl" label="🔍" />
           <ThemeToggle className="px-2" />
           <MenuButton open={isMenuOpen} onClick={handleMenuButtonClick} className="px-2" />
         </div>
