@@ -53,9 +53,10 @@ const Search = (props: MotionProps) => {
 
   return (
     <div className="w-full">
-      <m.button <HTMLDivElement> className={props.className}
+      <m.button
         {...props}
         onClick={handleSearchButtonClcik}
+        className= {props.className}
         //className="text-left w-full bg-backgroundLight pl-4 pr-6 py-2 rounded-md text-textColor/50 hover:text-textColor/80 hover:border-textColor/80 border-[0.5px] border-textColor/20 text-sm transition-all mr-4"
       >
         {props.label}
