@@ -9,6 +9,7 @@ import CommandPalette, {
   useHandleOpenCommandPalette,
 } from "@sjoleee/react-cmdk";
 import { MotionProps, m } from "framer-motion";
+
 import { allPosts } from "contentlayer/generated";
 
 

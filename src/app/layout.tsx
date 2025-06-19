@@ -1,9 +1,9 @@
 import { Metadata } from "next";
 import localFont from "next/font/local";
 import { Analytics } from "@vercel/analytics/next";
+
 import FramerLazyMotion from "@/components/FramerLazyMotion";
 import ThemeProvider from "@/components/ThemeProvider";
-
 import { USER_INFORMATIONS } from "@/constants/data";
 
 import "./globals.css";
