@@ -46,10 +46,10 @@ const Search = (props: MotionProps2) => {
 
           return {
             id: post._id,
-            icon: (post.keywords?.includes(search)) ? "TagIcon" : "DocumentTextIcon",
             children: post.title,
             showType: false,
             keywords: getKeywords(),
+            icon: (post.keywords?.includes(search) || post.description?.includes(search)) ? "TagIcon" : "DocumentTextIcon",
             href: post.slug,
           };
         }),

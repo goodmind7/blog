@@ -25,7 +25,7 @@ const PostListSection = ({ category }: { category?: string }) => {
             .
           </span>
         </h2>
-        <span>Mindset Shift and Growth | {category ? categoryCounts[category] + " Posts." : allPosts.length + " Posts."}</span>
+        <span>Mindset Shift and Growth | {category ? categoryCounts[category] + " posts found." : allPosts.length + " posts found."}</span>
         <div className="flex flex-col gap-8 w-full h-fit">
           {sortDatesDescending(allPosts)
             .filter((post) => post.category === category || !category)

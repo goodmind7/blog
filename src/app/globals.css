@@ -94,7 +94,19 @@ author {
 }
 
 block {
-  background-color: #050505;
+  background-color: #000000;
+  color: white;
+  border-radius: 0.25rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+  font-weight: 600;
+  font-size: 0.875em;
+}
+
+block-blue {
+  background-color: #004cc5;
   color: white;
   border-radius: 0.25rem;
   padding-left: 0.25rem;
