@@ -36,17 +36,17 @@ const Search = (props: MotionProps2) => {
             if (post.description && post.keywords) {
               return [...post.keywords, post.description];
             }
-
+              
             if (post.description) {
               return [post.description];
             }
-
+            
             return post.keywords;
           };
 
           return {
             id: post._id,
-            icon: "DocumentTextIcon",
+            icon: (post.keywords?.includes(search)) ? "TagIcon" : "DocumentTextIcon",
             children: post.title,
             showType: false,
             keywords: getKeywords(),
