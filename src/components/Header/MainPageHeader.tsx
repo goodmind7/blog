@@ -12,7 +12,6 @@ import Search from "../Search";
 
 import { headerVariants } from "@/constants/motions";
 import cn from "@/utils/cn";
-
 import { USER_INFORMATIONS } from "@/constants/data";
 
 interface MainPageHeaderProps {

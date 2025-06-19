@@ -2,9 +2,10 @@
 import { MouseEvent, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import { AnimatePresence, MotionProps, m, useMotionValue } from "framer-motion";
-import { ThemeToggleProps } from "./ThemeToggle";
-import useTheme from "@/hooks/useTheme";
 
+import { ThemeToggleProps } from "./ThemeToggle";
+
+import useTheme from "@/hooks/useTheme";
 import cn from "@/utils/cn";
 
 

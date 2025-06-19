@@ -3,7 +3,6 @@
 import "@sjoleee/react-cmdk/dist/cmdk.css";
 
 import { useState } from "react";
-
 import CommandPalette, {
   filterItems,
   getItemIndex,
@@ -11,6 +10,7 @@ import CommandPalette, {
 } from "@sjoleee/react-cmdk";
 import { MotionProps, m } from "framer-motion";
 import { allPosts } from "contentlayer/generated";
+
 
 allPosts.sort((a, b) => 
   a.title.localeCompare(b.title, 'ko-KR')
