@@ -12,13 +12,13 @@ export interface CardProps extends Omit<HTMLAttributes<HTMLDivElement>, "title">
   title: string;
   subtitle?: string;
   quote?: string;
-  description?: string;
+  //description?: string;
   thumbnail?: string;
   category: string;
   date: string;
 }
 
-const Card = ({ className, title, subtitle, description, quote, thumbnail, category, date }: CardProps) => {
+const Card = ({ className, title, subtitle, quote, thumbnail, category, date }: CardProps) => {
 
   return (
     <div
@@ -67,19 +67,11 @@ const Card = ({ className, title, subtitle, description, quote, thumbnail, categ
             </p>            
             <p
               className={cn(
-                "text-textColor text-xs break-words text-ellipsis overflow-hidden",
+                "text-textColor text-xs whitespace-nowrap break-words text-ellipsis overflow-hidden",
               )}
             >
               {quote}
             </p>              
-            <p
-              className={cn(
-                "text-textColor text-sm whitespace-nowrap break-words text-ellipsis overflow-hidden",
-              )}
-            >
-              {description}
-            </p>
-          
           </div>
         </div>
         <span className={cn("text-xs font-light text-textColor")}>{convertDate(date).slice(5)}</span>

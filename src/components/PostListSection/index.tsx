@@ -35,7 +35,7 @@ const PostListSection = ({ category }: { category?: string }) => {
                   title={post.title}
                   subtitle={post.subtitle}
                   quote={post.quote}
-                  description={post.description}
+                  //description={post.description}
                   thumbnail={post.thumbnail}
                   category={post.category}
                   date={post.date}
