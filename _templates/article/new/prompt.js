@@ -27,6 +27,8 @@ module.exports = {
       return fs.statSync(path.join(categoriesPath, file)).isDirectory();
     });
 
+    categories.reverse(); // to move 'mind' front
+
     try {
       let { category } = await prompter.prompt({
         type: "select",
@@ -34,7 +36,7 @@ module.exports = {
         message: "작성할 글의 카테고리를 선택해 주세요",
         choices: [...categories, NEW_CATEGORY_CHOICE],
       });
-
+      
       let categoryIcon;
 
       if (category === NEW_CATEGORY_CHOICE) {
