@@ -44,15 +44,12 @@ const Search = (props: MotionProps2) => {
             return post.keywords;
           };
 
-          const keywords: string[] | undefined = getKeywords();
-         //if (keywords.length > 0) { console.log(keywords) }
-
           return {
             id: post._id,
             children: post.title,
             showType: false,
-            keywords: keywords, //getKeywords(),
-            icon: (keywords.includes(search)) ? "TagIcon" : "DocumentTextIcon",
+            keywords: getKeywords(),
+            icon: (post.keywords?.includes(search)) ? "TagIcon" : "DocumentTextIcon",
             href: post.slug,
           };
         }),
