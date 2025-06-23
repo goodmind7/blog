@@ -44,7 +44,7 @@ const Search = (props: MotionProps2) => {
             return post.keywords;
           };
 
-          let keywords = getKeywords();
+          const keywords: string[] | undefined = getKeywords();
          //if (keywords.length > 0) { console.log(keywords) }
 
           return {
