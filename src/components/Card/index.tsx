@@ -67,7 +67,7 @@ const Card = ({ className, title, subtitle, quote, thumbnail, category, date }: 
             </p>            
             <p
               className={cn(
-                "text-textColor text-xs whitespace-nowrap break-words text-ellipsis overflow-hidden",
+                "text-textColor text-xs whitespace-nowrap break-words text-ellipsis overflow-hidden max-w-[330px]",
               )}
             >
               {quote}
