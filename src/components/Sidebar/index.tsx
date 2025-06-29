@@ -6,7 +6,7 @@ import Category from "../Category";
 import MainLogo from "../MainLogo";
 import Search from "../Search";
 import CustomCursorThemeToggle from "../ThemeToggle/CustomCursorThemeToggle";
-import Adsense from "../Adsense";
+// import Adsense from "../Adsense";
 
 import { USER_INFORMATIONS } from "@/constants/data";
 
@@ -28,7 +28,7 @@ const Sidebar = () => {
         </div>
       </div>
       <div className="flex flex-col gap-4">
-        {/* <div className="flex justify-center items-center gap-8">
+        <div className="flex justify-center items-center gap-8">
           {"github" in USER_INFORMATIONS && !!USER_INFORMATIONS["github"] && (
             <a
               href={USER_INFORMATIONS["github"]}
@@ -54,7 +54,7 @@ const Sidebar = () => {
               Resume
             </a>
           )}
-        </div> */}
+        </div>
 
         <div className="flex flex-col items-center text-[10px] text-textColor/30">
           <span className="whitespace-pre-wrap text-center">{`Copyright 2020. ${USER_INFORMATIONS.userName} All rights reserved.`}</span>
