@@ -116,3 +116,11 @@ block-blue {
   font-weight: 600;
   font-size: 0.875em;
 }
+
+.prose {
+  font-size: 1.125rem;
+}
+
+h3 {
+  padding-top: 20px;
+}
