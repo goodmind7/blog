@@ -21,23 +21,14 @@ const computedFields: ComputedFields = {
       return `${pathArr[0]}/${pathArr[lastIndex]}`;
     },
   },
-  // 수정 2025.06-12
-  // slugAsParams: {
-  // type: "string",
-  // resolve: (doc) => {
-  //   const pathArr = doc._raw.flattenedPath.split("/");
-  //   const lastIndex = pathArr.length - 1;
 
-  //   return pathArr;
-  // },
-    slugAsParams: {
-    type: "string",
-    resolve: (doc) => {
-      const pathArr = doc._raw.flattenedPath;
-      const lastIndex = pathArr.length - 1;
+  slugAsParams: {
+  type: "string",
+  resolve: (doc) => {
+    const pathArr = doc._raw.flattenedPath.split("/");
 
-      return pathArr;
-    },
+    return pathArr;
+  },
   },
 };
 

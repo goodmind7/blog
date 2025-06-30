@@ -43,7 +43,8 @@ const Search = (props: MotionProps2) => {
             
             return post.keywords;
           };
-// console.log(post.title)
+
+                
           return {
             id: post._id,
             children: post.title,

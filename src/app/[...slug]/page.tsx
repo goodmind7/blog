@@ -6,6 +6,7 @@ import Mdx from "@/components/Mdx";
 import { USER_INFORMATIONS } from "@/constants/data";
 import convertDate from "@/utils/convertDate";
 import { allPosts } from "contentlayer/generated";
+import Pagination from "@/components/Pagination";
 
 
 interface PostProps {
@@ -14,12 +15,15 @@ interface PostProps {
   };
 }
 
+allPosts.sort((a, b) => {
+  return new Date(b.date).getTime() - new Date(a.date).getTime();
+});
+
 const getPostFromParams = async (params: PostProps["params"]) => {
   
   const slug = params?.slug?.join("/");
-  const post = allPosts.find((post) => post.slugAsParams === slug);
- // 조건식 post.slugAsParams === slug >>> post.slug === slug contentLayer.config.ts 24
-
+  const post = allPosts.find((post) => post.slug === slug);
+  
   if (!post) {
     null;
   }
@@ -51,14 +55,15 @@ export const generateMetadata = async ({ params }: PostProps): Promise<Metadata>
 
 export const generateStaticParams = async (): Promise<PostProps["params"][]> => {
   return allPosts.map((post) => ({
-    slug: post.slugAsParams.split("/"),
+     slug: post.slug.split("/"),
   }));
 };
 
 const PostPage = async ({ params }: PostProps) => {
   const post = await getPostFromParams(params);
+   console.log("PostPage params:", params);
 
-  if (!post) {
+if (!post) {
     notFound();
   }
 
@@ -81,6 +86,13 @@ const PostPage = async ({ params }: PostProps) => {
       <hr className="my-8" />
       <Mdx code={post.body.code} />
 
+<hr className="my-10" />
+
+      <Pagination
+        currentPage={allPosts.findIndex((post) => post.slug === params?.slug?.join("/")) ?? null} 
+        currentPageTitle={""} 
+        totalPages={allPosts.length ?? 1}       
+      />
     </section>
   );
 };
