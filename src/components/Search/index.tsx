@@ -51,7 +51,7 @@ const Search = (props: MotionProps2) => {
             showType: false,
             keywords: getKeywords(),
             icon: (post.keywords?.includes(search)) ? "TagIcon" : "DocumentTextIcon",
-            href: post.slug,
+            href: `/${post.slug}`,
           };
         }),
       },

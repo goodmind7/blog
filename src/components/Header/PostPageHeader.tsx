@@ -5,7 +5,7 @@ import { ArrowLeft } from "iconoir-react";
 
 import MainLogo from "../MainLogo";
 import ThemeToggle from "../ThemeToggle/ThemeToggle";
-// import Search from "../Search";
+import Search from "../Search";
 
 import cn from "@/utils/cn";
 
@@ -33,7 +33,7 @@ const PostPageHeader = ({ className }: PostPageHeaderProps) => {
       </button>
       <MainLogo className="hidden tablet:flex" />
       <div className="flex">
-      {/* <Search className="text-2xl" label="🔍" /> */}
+      <Search className="text-2xl" label="🔍" />
       <ThemeToggle className="px-2"/>
       </div>
     </nav>
