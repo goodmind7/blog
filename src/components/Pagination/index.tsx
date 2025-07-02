@@ -21,8 +21,6 @@ export default function Pagination({ currentPage, totalPages }: PaginationProps)
 
   const nextPageTitle: string = allPosts[currentPage + 1]?.title || '🏠';
   const prevPageTitle: string = allPosts[currentPage - 1]?.title || '🏠';
-  const currentPageTitle: string = allPosts[currentPage]?.title || '';
-  console.log(currentPage, nextPageTitle, prevPageTitle, currentPageTitle);
 
 
   return (
