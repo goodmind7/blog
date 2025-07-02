@@ -8,7 +8,6 @@ import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import Search from "../Search";
 
 import cn from "@/utils/cn";
-import RandomPost from "../RandomPost";
 
 
 interface PostPageHeaderProps {
