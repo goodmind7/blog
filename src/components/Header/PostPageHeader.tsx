@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 
 import { useRouter } from "next/navigation";
 import { ArrowLeft } from "iconoir-react";
@@ -8,6 +8,7 @@ import ThemeToggle from "../ThemeToggle/ThemeToggle";
 import Search from "../Search";
 
 import cn from "@/utils/cn";
+import RandomPost from "../RandomPost";
 
 
 interface PostPageHeaderProps {
@@ -35,6 +36,7 @@ const PostPageHeader = ({ className }: PostPageHeaderProps) => {
       <div className="flex">
       <Search className="text-2xl" label="🔍" />
       <ThemeToggle className="px-2"/>
+
       </div>
     </nav>
   );

@@ -7,6 +7,7 @@ import { USER_INFORMATIONS } from "@/constants/data";
 import convertDate from "@/utils/convertDate";
 import { allPosts } from "contentlayer/generated";
 import Pagination from "@/components/Pagination";
+import RandomPost from "@/components/RandomPost";
 
 
 interface PostProps {
@@ -61,7 +62,7 @@ export const generateStaticParams = async (): Promise<PostProps["params"][]> => 
 
 const PostPage = async ({ params }: PostProps) => {
   const post = await getPostFromParams(params);
-   console.log("PostPage params:", params);
+  //  console.log("PostPage params:", params);
 
 if (!post) {
     notFound();
@@ -76,9 +77,10 @@ if (!post) {
               {post.title}
             </h1>
             <span className="text-lg">{post.subtitle}</span>
-            <div className="flex flex-col items-center gap-2">
-              <Badge>{post.category}</Badge>
+            <div className="flex items-center gap-2">
+              <Badge>{post.category.charAt(0).toUpperCase() + post.category.slice(1)}</Badge>
               <span className="text-sm opacity-50">{convertDate(post.date)}</span>
+                    
             </div>
           </div>
         </div>
@@ -86,13 +88,18 @@ if (!post) {
       <hr className="my-8" />
       <Mdx code={post.body.code} />
 
-<hr className="my-10" />
+<hr className="mt-10" />
 
       <Pagination
         currentPage={allPosts.findIndex((post) => post.slug === params?.slug?.join("/")) ?? null} 
         currentPageTitle={""} 
         totalPages={allPosts.length ?? 1}       
       />
+
+{/* <hr className="my-10" /> */}
+
+{/* <br className="my-10" /> */}
+      <RandomPost />
     </section>
   );
 };
